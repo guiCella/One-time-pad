@@ -4,29 +4,29 @@ namespace App\Services;
 
 class VernamCipher
 {
-    public function generateKey($length) {
-        $key = '';
-        for ($i = 0; $i < $length; $i++) {
-            $key .= chr(mt_rand(0, 255)); // Generate a random byte
-        }
-        return $key;
-    }
-
     public function encrypt($plaintext, $key) {
+        $key = $this->adjustKeyLength($key, strlen($plaintext));
         $ciphertext = '';
-        $length = strlen($plaintext);
-        for ($i = 0; $i < $length; $i++) {
+        for ($i = 0; $i < strlen($plaintext); $i++) {
             $ciphertext .= $plaintext[$i] ^ $key[$i]; // XOR each byte
         }
         return $ciphertext;
     }
 
     public function decrypt($ciphertext, $key) {
+        $key = $this->adjustKeyLength($key, strlen($ciphertext));
         $decryptedText = '';
-        $length = strlen($ciphertext);
-        for ($i = 0; $i < $length; $i++) {
+        for ($i = 0; $i < strlen($ciphertext); $i++) {
             $decryptedText .= $ciphertext[$i] ^ $key[$i]; // XOR each byte
         }
         return $decryptedText;
+    }
+
+    // Utility function to adjust the key length
+    private function adjustKeyLength($key, $length) {
+        while (strlen($key) < $length) {
+            $key .= $key;
+        }
+        return substr($key, 0, $length); // Ensure key is not longer than needed
     }
 }
