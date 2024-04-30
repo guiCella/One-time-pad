@@ -68,7 +68,6 @@ public function decryptFile(Request $request)
     return response()->download($filePath, $decryptedFileName, ['Content-Type' => 'text/plain'])->deleteFileAfterSend(true);
 }
 
-
     public function showForm()
 {
     return view('cipher');
