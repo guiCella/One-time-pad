@@ -12,7 +12,7 @@
 <body>
     <div class="container">
         <a href="{{ url('/') }}" class="back-button">&larr;</a>
-        <h1>Encriptar Arquivo</h1>
+        <h1>Criptografia XOR</h1>
         <form action="{{ url('/encrypt-file') }}" method="POST" enctype="multipart/form-data">
             @csrf
             <div>
@@ -27,7 +27,7 @@
                 </div>
             </div>
             <div class="form-group">
-            <button type="submit">Criptografar e Baixar</button>
+            <button type="submit">Encriptar ou Descriptar</button>
             </div>
         </form>
     </div>

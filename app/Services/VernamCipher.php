@@ -14,9 +14,6 @@ class VernamCipher
 
     // Process the input text using the key
     private function processText($input, $key) {
-        if (empty($input) || empty($key)) {
-            throw new \InvalidArgumentException('Input text and key cannot be empty');
-        }
 
         $key = $this->adjustKeyLength($key, strlen($input));
         $inputArr = str_split($input);
