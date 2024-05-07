@@ -17,7 +17,7 @@
             @csrf
             <div>
                 <label for="key">Chave de criptografia:</label>
-                <input type="text" id="key" name="key" placeholder="Chave segura...">
+                <input type="password" id="key" name="key" placeholder="Chave segura...">
             </div>
             <div class="form-group">
                 <div class="file-upload-wrapper">
