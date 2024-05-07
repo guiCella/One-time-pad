@@ -12,7 +12,7 @@
 <body>
     <div class="container">
         <a href="{{ url('/') }}" class="back-button">&larr;</a>
-        <h1>Criptografia XOR</h1>
+        <h1>Criptografia One-Time Pad</h1>
         <form action="{{ url('/encrypt-file') }}" method="POST" enctype="multipart/form-data">
             @csrf
             <div>
@@ -22,7 +22,7 @@
             <div class="form-group">
                 <div class="file-upload-wrapper">
                     <button type="button" class="file-upload-button">Escolha um arquivo</button>
-                    <input type="file" class="file-upload-input" id="file-upload" name="file">
+                    <input type="file" class="file-upload-input" id="file-upload" name="file"  accept=".txt">
                     <span id="file-name">Nenhum arquivo selecionado...</span>
                 </div>
             </div>
