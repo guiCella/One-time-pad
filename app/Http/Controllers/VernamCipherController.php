@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Services\VernamCipher;
 use Illuminate\Support\Facades\Storage;
+use setasign\Fpdi\Fpdi;
+use TCPDF;
 
 class VernamCipherController extends Controller
 {
@@ -30,7 +32,9 @@ class VernamCipherController extends Controller
 
         $encryptedContents = $this->cipher->encrypt($contents, $key);
 
-        $encryptedFileName = 'FileCrypt_' . date('d_m_Y')  . '.txt';
+        $originalFileName = $file->getClientOriginalName();
+        $extension = $file->getClientOriginalExtension();
+        $encryptedFileName = 'FileCrypt_' . date('d_m_Y')  . $extension;
         $filePath = storage_path('app/' . $encryptedFileName);
 
         Storage::disk('local')->put($encryptedFileName, $encryptedContents);
