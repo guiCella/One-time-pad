@@ -1,0 +1,65 @@
+[33mcommit e1e63a952d61de294c6f0f79ee3ebcfe9bcc0ca8[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Renan de Jesus <renan_dejesus24@hotmail.com>
+Date:   Wed May 8 16:00:42 2024 -0300
+
+    Docs. Update
+
+[33mcommit 3911e5c6bb75c8d561b19a065cf988985908e2ef[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Guilherme Luiz Cella <guilhermecella8@gmail.com>
+Date:   Tue May 7 20:55:38 2024 -0300
+
+    added the time format and solved the web route bug
+
+[33mcommit f52607f442748f29dc289350d8c3743243baf838[m
+Author: Guilherme Luiz Cella <guilhermecella8@gmail.com>
+Date:   Tue May 7 20:39:58 2024 -0300
+
+    Removed the decrypt view and mashed the encrypt with decrypt
+
+[33mcommit d47b2cad29240a7d9a4cfa2b908fdfcce9587620[m
+Author: Guilherme Luiz Cella <guilhermecella8@gmail.com>
+Date:   Tue Apr 30 14:44:33 2024 -0300
+
+    Now with a favicon.ico
+
+[33mcommit 44d98bbde5c75cec4fda03400c2b8b176f4ad519[m
+Author: Guilherme Luiz Cella <guilhermecella8@gmail.com>
+Date:   Tue Apr 30 14:31:14 2024 -0300
+
+    view welcome.blade complete css made
+
+[33mcommit 1526aec723cfa1e69118a72cfde7e0c1090bbf6d[m
+Author: Guilherme Luiz Cella <guilhermecella8@gmail.com>
+Date:   Tue Apr 30 14:22:14 2024 -0300
+
+    Encrypt e Decrypt view now with css and ready
+
+[33mcommit 145df41e01f677f1f2474d95b83f78873dc2e57e[m
+Author: Guilherme Luiz Cella <guilhermecella8@gmail.com>
+Date:   Tue Apr 30 11:01:43 2024 -0300
+
+    Made the stile of the cipher.blade
+
+[33mcommit bc6804288648dfd3f44b9865bcffcab104722887[m
+Author: Guilherme Luiz Cella <guilhermecella8@gmail.com>
+Date:   Sun Apr 14 16:28:25 2024 -0300
+
+    MVP sending it to test
+
+[33mcommit b04f3a478f75f37da89c5c86c90fb5cff870c3d0[m
+Author: Guilherme Luiz Cella <guilhermecella8@gmail.com>
+Date:   Sat Apr 13 22:38:26 2024 -0300
+
+    start of the project and i and try somethings
+
+[33mcommit ca62486268a7163dfac93a3910ccc6521b114e02[m
+Author: Guilherme Luiz Cella <guilhermecella8@gmail.com>
+Date:   Sat Apr 13 22:14:42 2024 -0300
+
+    start
+
+[33mcommit 70ea9484c4f1c5c24fa11bb980b38446f59293ee[m
+Author: Guilherme Luiz Cella <guilhermecella8@gmail.com>
+Date:   Sat Apr 13 21:57:35 2024 -0300
+
+    Set up a fresh Laravel app

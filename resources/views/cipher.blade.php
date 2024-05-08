@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site para criptografia de documentos</title>
+    <title>Criptografia de documentos</title>
     <link rel="icon" type="image/png" href="onetimepad.png" />
     <link rel="stylesheet" href="{{ asset('css/cipher.css') }}">
 </head>
@@ -17,12 +17,12 @@
             @csrf
             <div>
                 <label for="key">Chave de criptografia:</label>
-                <input type="text" id="key" name="key" placeholder="Chave segura...">
+                <input type="password" id="key" name="key" placeholder="Chave segura...">
             </div>
             <div class="form-group">
                 <div class="file-upload-wrapper">
                     <button type="button" class="file-upload-button">Escolha um arquivo</button>
-                    <input type="file" class="file-upload-input" id="file-upload" name="file"  accept=".txt">
+                    <input type="file" class="file-upload-input" id="file-upload" name="file" accept=".txt,.doc,.docx,.pdf" required>
                     <span id="file-name">Nenhum arquivo selecionado...</span>
                 </div>
             </div>
