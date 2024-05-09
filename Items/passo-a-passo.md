@@ -13,4 +13,4 @@ Vídeo para apoio: <a href = 'https://www.youtube.com/watch?v=Lgh8JgcYFwM'><i>Co
 
 <h2>Composer</h2>
 
-Download Composer
+Download <a href = 'https://getcomposer.org/'><i>Composer</i></a><br>
