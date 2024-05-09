@@ -45,7 +45,7 @@ Caso você não tenha algum, ou nenhum, desses aplicativos instalados, basta voc
 
 Com todos os aplicativos instalados e devidamente configurados, podemos iniciar o processo de abertura do localhost. Para realizarmos tal feito, vamos seguir os passos abaixo:
 
-_OBS.: O tutorial a seguir é condizente para o sistema operacional Windows. Caso você tenha algum outro, você poderá ver o tutorial clicando [aqui](Documentation/install%20Linux.md) para Linux ou [aqui](Documentation/install%20Mac.md) para Mac.
+_OBS.: O tutorial a seguir é condizente para o sistema operacional Windows. Caso você tenha algum outro, você poderá ver o tutorial clicando [aqui](Documentation/install%20Linux.md) para Linux ou [aqui](Documentation/install%20Mac.md) para Mac._
 
 **1- Clonar o repositório:** Para este primeiro passo, precisamos criar uma pasta para guardarmos este programa em nossa máquina.
 
