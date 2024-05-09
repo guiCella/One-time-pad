@@ -1,6 +1,7 @@
 <h1 style="text-align:center;">One-Time Pad🔐</h1>
 
-<br>
+[Readme en-US](README%20en-US.md)
+
 
 ## Sobre o Projeto
 
@@ -13,7 +14,7 @@ O objetivo deste projeto é criar um aplicativo web que possa receber arquivos e
 
 ## Como Funcina
 
-Esse projeto se baseia na criptografia One-Time Pad. A qual, para que funcione de maneira precisa e efetiva, necessita de uma chave de criptografia. Para ser mais especifico, esta chave consiste em uma determinda ordem de caracters, escolhida pelo usuário.
+Esse projeto se baseia na criptografia One-Time Pad. A qual, para que funcione de maneira precisa e efetiva, necessita de uma chave de criptografia. Para ser mais especifico, esta chave consiste em uma determinda ordem de caracters, escolhida pelo usuário. Além da chave, o usuário também deve escolher um arquivo que quer criptografar.
 
 Com base nessa chave, usamos o operador lógico XOR, para encriptar ou decriptar os dados do arquivo enviado. Esse operador tem a capacidade de trocar os bits que compõem os caracteres, conforme mostra o exemplo abaixo.
 
@@ -23,6 +24,8 @@ Com base nessa chave, usamos o operador lógico XOR, para encriptar ou decriptar
 |    0      |     1     |   1   |
 |    1      |     0     |   1   |
 |    1      |     1     |   0   |
+
+Após a operação de criptografar, o arquvo enviado é deletado do sistema. Sendo assim, o usuário não corre riscos que seu documento seja exposto eventualmente
 
 ## Instalação
 
@@ -38,11 +41,11 @@ Para que o aplicativo rode em localhost você precisa ter instalado em sua máqu
 - Composer
 - Sail
 
-Caso você não tenha algum, ou nenhum, desses aplicativos instalados, basta você clicar [neste link](Items/passo-a-passo.md) e seguir o passo a passo de como instalá-los.
+Caso você não tenha algum, ou nenhum, desses aplicativos instalados, basta você clicar [neste link](Documentation/passo-a-passo.md) e seguir o passo a passo de como instalá-los.
 
 Com todos os aplicativos instalados e devidamente configurados, podemos iniciar o processo de abertura do localhost. Para realizarmos tal feito, vamos seguir os passos abaixo:
 
-_OBS.: O tutorial a seguir é condizente para o sistema operacional Windows. Caso você tenha algum outro, você poderá ver o tutorial clicando [aqui]() para Linux ou [aqui]() para Mac.
+_OBS.: O tutorial a seguir é condizente para o sistema operacional Windows. Caso você tenha algum outro, você poderá ver o tutorial clicando [aqui](Documentation/install%20Linux.md) para Linux ou [aqui](Documentation/install%20Mac.md) para Mac.
 
 **1- Clonar o repositório:** Para este primeiro passo, precisamos criar uma pasta para guardarmos este programa em nossa máquina.
 
