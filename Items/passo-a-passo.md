@@ -9,4 +9,4 @@
 <h2>Docker</h2>
 
 Para a instação do Docker no Windows você pode conferir neste <a href = 'https://docs.docker.com/desktop/install/windows-install/'><i>link</i></a>
-Caso surja duvidas quanto ao processo você pode usar este vídeo para apoio <a href = 'https://www.youtube.com/watch?v=Lgh8JgcYFwM'><i>Como instalar o Docker no Windows</i></a>
+Caso surja duvidas quanto ao processo você pode usar este vídeo para apoio: <a href = 'https://www.youtube.com/watch?v=Lgh8JgcYFwM'><i>Como instalar o Docker no Windows</i></a>
