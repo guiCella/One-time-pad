@@ -6,7 +6,7 @@
 
 <h2>Instalação3</h2>
 
-<h2><color = 1E90FF>Docker</color></h2>
+<h2>Docker</h2>
 
 Download e instação <a href = 'https://docs.docker.com/desktop/install/windows-install/'><i>Docker</i></a><br>
 Vídeo para apoio: <a href = 'https://www.youtube.com/watch?v=Lgh8JgcYFwM'><i>Como instalar o Docker no Windows</i></a>
