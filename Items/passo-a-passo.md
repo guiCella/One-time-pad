@@ -13,4 +13,5 @@ Vídeo para apoio: <a href = 'https://www.youtube.com/watch?v=Lgh8JgcYFwM'><i>Co
 
 <h2>Composer</h2>
 
-Download <a href = 'https://getcomposer.org/'><i>Composer</i></a><br>
+Download e instalação <a href = 'https://getcomposer.org/'><i>Composer</i></a><br>
+Vídeo de apoio: <a href = 'https://www.youtube.com/watch?v=VeK3UvBKtqU'><i>Composer - Aprenda a instalar e configurar este gerenciador de dependências</i></a>
