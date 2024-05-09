@@ -1,2 +1,4 @@
-<h1 style = "text-align:center">Instalação</h1>
+<h1>Instalação</h1>
+
+<h2>PHP</h2>
 
