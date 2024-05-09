@@ -10,6 +10,11 @@
 </head>
 
 <body>
+    <div class="blur-background" id="blurBackground"></div> 
+    <div class="message-box" id="messageBox">
+        <p>Aviso: Compartilhe a sua senha-chave apenas com pessoas de sua confiança.</p>
+        <button class="btn-ok" onclick="closeMessageBox()">OK</button>
+    </div>
     <div class="container">
         <a href="{{ url('/') }}" class="back-button">&larr;</a>
         <h1>Criptografia One-Time Pad</h1>
