@@ -18,29 +18,27 @@ class VernamCipherController extends Controller
     }
 
     public function encryptFile(Request $request)
-    {
-        $request->validate([
-            'file' => 'required|file',
-            'key' => 'required|string'
-        ]);
+{
+    $request->validate([
+        'file' => 'required|file',
+        'key' => 'required|string'
+    ]);
 
-        $file = $request->file('file');
-        $key = $request->input('key');
-        $contents = file_get_contents($file->getRealPath());
+    $file = $request->file('file');
+    $key = $request->input('key');
+    $contents = file_get_contents($file->getRealPath());
 
-        $key = str_pad($key, strlen($contents), $key, STR_PAD_RIGHT);
+    $key = str_pad($key, strlen($contents), $key, STR_PAD_RIGHT);
 
-        $encryptedContents = $this->cipher->encrypt($contents, $key);
+    $encryptedContents = $this->cipher->encrypt($contents, $key);
 
-        $originalFileName = $file->getClientOriginalName();
-        $extension = $file->getClientOriginalExtension();
-        $encryptedFileName = 'FileCrypt_' . date('d_m_Y')  . $extension;
-        $filePath = storage_path('app/' . $encryptedFileName);
+    $originalFileName = $file->getClientOriginalName();
+    $filePath = storage_path('app/' . $originalFileName);
 
-        Storage::disk('local')->put($encryptedFileName, $encryptedContents);
+    Storage::disk('local')->put($originalFileName, $encryptedContents);
 
-        return response()->download($filePath, $encryptedFileName, ['Content-Type' => 'text/plain'])->deleteFileAfterSend(true);
-    }
+    return response()->download($filePath, $originalFileName, ['Content-Type' => 'text/plain'])->deleteFileAfterSend(true);
+}
 
     public function showForm()
     {

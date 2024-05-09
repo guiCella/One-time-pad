@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Criptografia de documentos</title>
+    <title>Site para criptografia de documentos</title>
     <link rel="icon" type="image/png" href="onetimepad.png" />
     <link rel="stylesheet" href="{{ asset('css/cipher.css') }}">
 </head>
@@ -17,17 +17,17 @@
             @csrf
             <div>
                 <label for="key">Chave de criptografia:</label>
-                <input type="password" id="key" name="key" placeholder="Chave segura...">
+                <input type="text" id="key" name="key" placeholder="Chave segura...">
             </div>
             <div class="form-group">
                 <div class="file-upload-wrapper">
                     <button type="button" class="file-upload-button">Escolha um arquivo</button>
-                    <input type="file" class="file-upload-input" id="file-upload" name="file" accept=".txt,.doc,.docx,.pdf" required>
+                    <input type="file" class="file-upload-input" id="file-upload" name="file" accept=".txt">
                     <span id="file-name">Nenhum arquivo selecionado...</span>
                 </div>
             </div>
             <div class="form-group">
-            <button type="submit">Encriptar ou Descriptar</button>
+                <button type="submit">Encriptar ou Descriptar</button>
             </div>
         </form>
     </div>
@@ -60,6 +60,12 @@
                 } else if (fileUploadInput.files.length === 0) {
                     event.preventDefault();
                     showNotification('Nenhum arquivo selecionado...', 5000);
+                } else {
+                    setTimeout(() => {
+                        keyInput.value = '';
+                        fileUploadInput.value = '';
+                        fileNameDisplay.textContent = 'Nenhum arquivo selecionado...';
+                    }, 1000);
                 }
             });
 

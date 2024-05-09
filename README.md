@@ -39,3 +39,4 @@ Caso você não tenha algum, ou nenhum, desses aplicativos instalados, basta voc
 
 - Para utilizar o aplicativo de maneira efetiva, precisamos de uma chave de criptografia, que nesse caso será uma senha criada pelo usuário. 
 - Após o usuário inserir a chave desjada, ele deve inserir um documento que contenha os dados que ele quer criptografar.
+
