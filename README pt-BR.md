@@ -9,7 +9,7 @@
 
 ## Objetivo
 
-O objetivo deste projeto é criar um aplicativo web que possa receber arquivos e criptografá-los para garantir sua segurança durante o armazenamento ou transmissão. Além disso, o aplicativo também é capaz de descriptografar esses arquivos para que possam ser acessados novamente pelo usuário.
+O objetivo deste projeto é criar um aplicativo web que possa receber arquivos de texto puro e criptografá-los para garantir sua segurança durante o armazenamento ou transmissão. Além disso, o aplicativo também é capaz de descriptografar esses arquivos para que possam ser acessados novamente pelo usuário.
 
 
 ## Como Funcina
@@ -35,17 +35,14 @@ Para que o aplicativo rode em localhost você precisa ter instalado em sua máqu
 
 - Git
 - PHP
-- Laravel
 - Docker
-- Ubuntu
+- WSL/Ubuntu
 - Composer
 - Sail
 
-Caso você não tenha algum, ou nenhum, desses aplicativos instalados, basta você clicar [neste link](Documentation/passo-a-passo.md) e seguir o passo a passo de como instalá-los.
+Caso você não tenha algum, ou nenhum, desses aplicativos instalados, basta você clicar [neste link](Documentation/install%20apps%20pt-BR.md) e seguir o passo a passo de como instalá-los.
 
 Com todos os aplicativos instalados e devidamente configurados, podemos iniciar o processo de abertura do localhost. Para realizarmos tal feito, vamos seguir os passos abaixo:
-
-_OBS.: O tutorial a seguir é condizente para o sistema operacional Windows. Caso você tenha algum outro, você poderá ver o tutorial clicando [aqui](Documentation/install%20Linux.md) para Linux ou [aqui](Documentation/install%20Mac.md) para Mac.
 
 **1- Clonar o repositório:** Para este primeiro passo, precisamos criar uma pasta para guardarmos este programa em nossa máquina.
 
@@ -55,7 +52,7 @@ _OBS.: O tutorial a seguir é condizente para o sistema operacional Windows. Cas
 
 _OBS.: O camando deverá ser inserido sem a presença da aspas._
 
-**2- Abrir o terminal:** Após ter clonado o repositório, iremos na barra de pesquisa do Windows e digitaremos "Prompt de Comando". Após localizarmos, iremos clicar na opção "Executar como administrador".
+**2- Abrir o terminal:** Após ter clonado o repositório, iremos procurar pelo terminal do nosso sistema operacional. Após localizarmos, iremos clicar na opção "Executar como administrador".
 
 **3- Navegar para o diretorio em que se encontra o programa:** Para realizarmos esse passo, primeiramente iremos abrir a pasta onde se entra os arquivos do programa. Após isso, vamos clicar com o botão direito do mouse no campo que mostra o lugar onde a pasta se encontra. Clicando neste campo, ele selecionará o endereço automanticamente. Feito isso, clicaremos com o botão esquerdo na parte que esta em azul e selecionaremos a opção "Copiar".
 
@@ -63,11 +60,15 @@ _OBS.: O camando deverá ser inserido sem a presença da aspas._
 
 _OBS.: Vale lembrar que devemos trocar a parte "endereço copiado", pelo endereço que copiamos anteriormente, e tirar as aspas._
 
-**4- Inicializar o programa:** Estando dentro da pasta condizente, no prompt de comando, iriemos utilizar o comando "sail up". Assim estaremos inicializando o programa em localhost.
+**4- Abrindo o docker:** Antes que possamos ter continuidade, teremos que abrir o aplicativo do docker. Você pode encontrá-lo pesquisando na barra de busca do Windows por "Docker Desktop" ou olhando na sua área de trabhalo, caso você tenha marcado a opção de criar um atalho na hora da instalação
 
-**5- Abrindo o programa no navegador web:** Após realizarmos os passos anteriores, o programa já estará rodando perfeitamente. Com isso, você pode abrir um navegador web, de sua escolha, e digitar o seguinte endereço URL: localhost:6969. Após digitar e apertar o enter, você será redirecionado para a página do programa.
+**5- Inicializar o programa:** Estando dentro da pasta condizente, no prompt de comando, iriemos utilizar o comando "docker compose up". Assim estaremos inicializando o programa em localhost.
 
-**6- Fechando o programa:** Quando você acabar de utilizar o programa, deverá fechá-lo. Para isso, tens que ir novamente no prompt de comando, e digitar o comando "sail down". Lembrando que o camando deve ser ser as aspas.
+_OBS.: Na primeira vez que você utilizar este comando, ele irá demorar para abrir o localhost. A volocidade depende apenas da sua máquina._
+
+**6- Abrindo o programa no navegador web:** Após realizarmos os passos anteriores, o programa já estará rodando perfeitamente. Com isso, você pode abrir um navegador web, de sua escolha, e digitar o seguinte endereço URL: localhost:6969. Após digitar e apertar o enter, você será redirecionado para a página do programa.
+
+**7- Fechando o programa:** Quando você acabar de utilizar o programa, deverá fechá-lo. Para isso, tens que ir novamente no terminal, e apertar as teclas 'CTRL + c'. Lembrando que o camando deve ser ser as aspas.
 
 ## Como Utilizar 
 
@@ -80,8 +81,6 @@ Apesar de ser um programa bem simples e com uma interface intuitiva, vamos fazer
 **<font color="red">Atenção: A chave de criptografia é uma chave única, a qual você deve compartilhar apenas com quem confia</font>**
 
 **3-** Após a escolha da chave, você deve clicar em "Escolha um arquivo" e selecionar o arquivo, com extensão ".txt", que você deseja criptografar. Tendo o arquivo selecionado, clique no botão "Abrir arquivo". Com isso feito o arquivo está pronto para a criptografia
-
-**<font color="green">Nota: Atualmente o programa se encontra um uma versão inicial, a qual aceita, somente, arquivos com a extensão ".txt". Atento que estamos trabalhando arduamente para que seja implementado o suporte de outros tipos de arquivos, como ".docx" e ".pfd" por exemplo.</font>**
 
 **4-** Completando os passos anteriores, você já pode criptografar o seu arquivo. Para isso, basta clinar no botão "Encriptar ou Descriptar". Clicando nesse botão, o conteudo do seu arquivo será criptografado e será feito, automaticamente, um download de um novo arquivo com o conteúdo criptografado.
 

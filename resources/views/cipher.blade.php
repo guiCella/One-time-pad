@@ -27,7 +27,7 @@
             <div class="form-group">
                 <div class="file-upload-wrapper">
                     <button type="button" class="file-upload-button">Escolha um arquivo</button>
-                    <input type="file" class="file-upload-input" id="file-upload" name="file" accept=".txt,.doc,.docx,.pdf" required>
+                    <input type="file" class="file-upload-input" id="file-upload" name="file" accept=".txt" required>
                     <span id="file-name">Nenhum arquivo selecionado...</span>
                 </div>
             </div>
