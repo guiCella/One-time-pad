@@ -1,6 +1,6 @@
 <h1 style="text-align:center;">One-Time Pad🔐</h1>
 
-[Readme en-US](README%20en-US.md)
+[Readme pt-BR](README%20pt-BR.md)
 
 ## About the Project
 
@@ -38,7 +38,7 @@ To run the application on localhost, you need to have the following programs ins
 - Composer
 - Sail
 
-If you don't have any of these applications installed, or if you're missing some, you can click [this link](Documentation/install%20apps.md) and follow the step-by-step guide on how to install them.
+If you don't have any of these applications installed, or if you're missing some, you can click [this link](Documentation/install%20apps%20en-US.md) and follow the step-by-step guide on how to install them.
 
 With all the required applications installed and properly configured, we can start the process of opening localhost. To do this, follow the steps below:
 
@@ -80,7 +80,6 @@ Although it is a very simple program with an intuitive interface, let's go throu
 
 **3-** After choosing the key, click on "Choose a file" and select the file with the extension ".txt" that you want to encrypt. Once you have selected the file, click on the "Open file" button. With this done, the file is ready for encryption.
 
-**<font color="green">Note: Currently, the program is in its initial version, which only accepts files with the ".txt" extension. Be aware that we are working hard to implement support for other file types, such as ".docx" and ".pdf," for example.</font>**
 
 **4-** Once you have completed the previous steps, you can encrypt your file. To do this, simply click on the "Encrypt or Decrypt" button. Clicking this button will encrypt the contents of your file, and a new file with the encrypted content will be downloaded automatically.
 
