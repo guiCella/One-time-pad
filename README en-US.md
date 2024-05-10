@@ -32,10 +32,9 @@ As this project is a web application, no installation is required. However, sinc
 To run the application on localhost, you need to have the following programs installed on your machine:
 
 - Git
-- PHP
-- Laravel
 - Docker
 - Ubuntu
+- PHP
 - Composer
 - Sail
 
