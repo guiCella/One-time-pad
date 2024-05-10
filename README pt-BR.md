@@ -34,10 +34,9 @@ Como esse projeto é um aplicativo web, não será necessario fazer nenhuma inst
 Para que o aplicativo rode em localhost você precisa ter instalado em sua máquina os seguintes programas:
 
 - Git
-- PHP
-- Laravel
 - Docker
 - Ubuntu
+- PHP
 - Composer
 - Sail
 
