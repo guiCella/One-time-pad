@@ -5,3 +5,8 @@ Para saber mais detalhes sobre como funciona e como usar o projeto acesse [este 
 <h1 style="text-align:center">EN-US</h1>
 
 To learn more details about how it works and how to use the project, access [this link](README%20en-US.md).
+
+![Image description](./public/XOR.png)
+![Image description](./public/XOR_2.png)
+![Image description](./public/XOR_3.png)
+![Image description](./public/XOR_4.png)
