@@ -4,35 +4,46 @@ namespace App\Services;
 
 class VernamCipher
 {
-    // Utility function to adjust the key length
-    private function adjustKeyLength($key, $length) {
+    // Ajusta o tamanho da chave para o tamanho do texto de entrada
+    private function adjustKeyLength($key, $length)
+    {
         while (strlen($key) < $length) {
             $key .= $key;
         }
-        return substr($key, 0, $length); 
+        return substr($key, 0, $length);
     }
 
-    // Process the input text using the key
-    private function processText($input, $key) {
+    // Procesa o texto de entrada com a chave
+    private function processText($input, $key)
+    {
 
         $key = $this->adjustKeyLength($key, strlen($input));
+
+        // Converte o texto de entrada e a chave em arrays de caracteres
+
         $inputArr = str_split($input);
         $keyArr = str_split($key);
 
-        $resultArr = array_map(function($inputChar, $keyChar) {
+        // XOR cada caractere do texto de entrada com o caractere correspondente da chave
+
+        $resultArr = array_map(function ($inputChar, $keyChar) {
             return $inputChar ^ $keyChar;
         }, $inputArr, $keyArr);
+
+        // Converte o array de caracteres resultante em uma string
 
         return implode('', $resultArr);
     }
 
-    // Encrypt the plaintext using the key
-    public function encrypt($plaintext, $key) {
+    // Encripta o texto de entrada usando a chave
+    public function encrypt($plaintext, $key)
+    {
         return $this->processText($plaintext, $key);
     }
 
-    // Decrypt the ciphertext using the key
-    public function decrypt($ciphertext, $key) {
+    // Decripta o texto de entrada usando a chave
+    public function decrypt($ciphertext, $key)
+    {
         return $this->processText($ciphertext, $key);
     }
 }
